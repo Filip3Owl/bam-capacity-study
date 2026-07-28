@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.DS_Store
+
+# The Olivetti database is downloaded by scikit-learn on first run and is not
+# redistributed here.
+data/
+
+# results/ is deliberately tracked: the figures and animations are the
+# deliverable, and README.md and REPORT.md link to them. Everything in it is
+# reproducible with `python experiments/run_all.py`.

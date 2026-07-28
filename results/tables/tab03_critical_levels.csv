@@ -1,0 +1,13 @@
+scenario,rule,metric,critical_level
+noise_x,hebb,x_perfect_resonance,
+noise_x,multiple_training,x_perfect_resonance,
+noise_x,least_squares,x_perfect_resonance,0.35
+noise_x,dense,x_perfect_resonance,0.45
+occlusion_x,hebb,x_perfect_resonance,
+occlusion_x,multiple_training,x_perfect_resonance,
+occlusion_x,least_squares,x_perfect_resonance,0.4
+occlusion_x,dense,x_perfect_resonance,0.8
+noise_y,hebb,x_perfect_pass,0
+noise_y,multiple_training,x_perfect_pass,0
+noise_y,least_squares,x_perfect_pass,0
+noise_y,dense,x_perfect_pass,0.25

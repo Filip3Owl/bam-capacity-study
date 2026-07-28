@@ -1,0 +1,5 @@
+rule,trajectories,monotonicity_violations,convergence_rate,mean_energy_drop
+"Hebb (Kosko, 1988)",200,0,1,298780
+Multiple training,200,0,1,6.31237e+07
+Least squares,200,0,1,459.663
+Dense (exponential),200,0,1,1.47015

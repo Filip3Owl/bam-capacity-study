@@ -1,0 +1,24 @@
+# ---------------------------------------------------------------------------
+# Direct dependencies for the Bidirectional Associative Memory (BAM) study.
+# Bounds are intentionally loose here; `requirements.lock.txt` carries the
+# exact, fully-resolved environment used to produce the published results.
+# ---------------------------------------------------------------------------
+
+# --- Numerics -------------------------------------------------------------
+numpy>=1.26,<3.0
+scipy>=1.11,<2.0          # Hadamard codebooks, statistics, distance metrics
+
+# --- Data -----------------------------------------------------------------
+scikit-learn>=1.4,<2.0    # fetch_olivetti_faces (AT&T ORL face database)
+pandas>=2.1,<3.0          # experiment result tables
+
+# --- Visualisation & animation -------------------------------------------
+matplotlib>=3.8,<4.0
+pillow>=10.0,<12.0        # GIF encoder behind matplotlib.animation.PillowWriter
+imageio>=2.34,<3.0        # frame-level GIF assembly for custom animations
+
+# --- Notebook environment -------------------------------------------------
+jupyterlab>=4.1,<5.0
+ipykernel>=6.29,<7.0
+ipywidgets>=8.1,<9.0
+tqdm>=4.66,<5.0
