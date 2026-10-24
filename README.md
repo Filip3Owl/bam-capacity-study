@@ -3,15 +3,15 @@
 An experimental study of Kosko's 1988 model and three alternatives, on the
 **Olivetti/ORL** face database (400 images, 40 subjects, 64×64 pixels).
 
-The full report — methods, results and discussion — is in
+The full report (methods, results and discussion) is in
 **[`REPORT.md`](REPORT.md)**.
 
 ---
 
 ## The finding in one sentence
 
-The BAM is unconditionally stable — it always converges, for any weight
-matrix — and that guarantee does not stop it from converging to spurious states
+The BAM is unconditionally stable (it always converges, for any weight
+matrix) and that guarantee does not stop it from converging to spurious states
 on real faces from as few as five stored patterns. The reason is measurable,
 predictable and, in part, avoidable.
 
@@ -65,7 +65,7 @@ Four, one per question, each stating its own conclusion in its closing frames.
 | File | Question it answers |
 |---|---|
 | `01_bidirectional_recall.gif` | What does a BAM actually do? A corrupted face goes in; the pair comes back. Then the face is erased and the code alone restores it. |
-| `02_capacity.gif` | How many pairs fit? Same network, same rule — only the codebook changes, and capacity moves 20×. |
+| `02_capacity.gif` | How many pairs fit? Same network, same rule: only the codebook changes, and capacity moves 20×. |
 | `03_robustness.gif` | How much damage survives? Flipped pixels against erased pixels, corrupted by the same fraction at the same time. |
 | `04_identification.gif` | What is it for? Unseen photograph → identity → the synthesised prototype of that person. |
 
@@ -135,7 +135,7 @@ faces = model.associate_backward(Y)        # single-pass Y→X
   to 29 %.
 - **The Hebbian BAM evokes the class prototype**, bit-for-bit identical to the
   majority vote of the training poses (verified over 40 classes × 6 seeds).
-- **As a classifier the BAM loses to nearest neighbour** (86.8 % vs 91.5 %) — a
+- **As a classifier the BAM loses to nearest neighbour** (86.8 % vs 91.5 %): a
   negative result recorded, not hidden.
 
 ## Data licence
